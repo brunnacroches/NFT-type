@@ -14,46 +14,6 @@ SRC
   - index.css
   - logo.svg
 
-### `APAGAR no App.tsx`
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
-
-### `FICA no App.tsx`
-import React from 'react';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
-}
-
-export default App;
 
 ### Configurar o editorconfig
  - com o mouse botão direito `Generate .editorconfig`
@@ -100,11 +60,81 @@ customizáveis em nossos componentes
 ____________________________________________
 
 ### INSTALAR BIBLIOTECAS DE DESENVOLVIMENTO 
-` npm install -D @types/styled-system @types/styled-components @types/react-dom `  
+`npm install -D @types/styled-system @types/styled-components @types/react-dom`  
 - são tipagens das bibliotecas em TypeScript
 -como a gente esta no ambiente em TypeScript  é muito importante essas tipagens pq é muito comum 
 a comunidade o pessoal subir o pacote da biblioteca e outro pacote da tipagem para ficar mais leve porque 
 nem todo mundo trabalha com TypeScript 
 ____________________________________________
 
-### CONFIGURAÇÃO DE TEMAS
+### CRIANDO AS PASTAS
+-PUBLIC
+    -index.html
+- SRC
+ # -ASSETS
+    -icons
+    -img
+#  -COMPONENTES
+    -Title
+      -index.tsx
+      -style.css
+#  -CONTAINERS
+    -NFTCard
+      -index.tsc
+      -style.css
+#  -PAGES
+    -Home
+      -index.tsc
+      -style.css
+#  -TYPES
+    -index.d.ts
+
+-global.css
+-index.tsx
+_______________________________________________________________________________
+
+#  -COMPONENTES
+uma parte do código que é utilizado e não tem lógica nenhuma
+é como se fosse os dedos da mãos
+#  -CONTAINERS
+o containers renderiza os componentes
+é como se fosse as mãos pq ele junta todos os dedos(componentes)
+#  -PAGES
+tem controle total da aplicação
+requisão para o Back End
+#  -TYPES
+#  -GLOBAL.CSS / INDEX.TSX
+
+
+
+_________________________________________________________________________
+//  =============================>>> <<<=================================
+// Explicando o CÓDIGO ==> COMPONENTES <==
+// aqui basicamente: 
+
+//  ==> IMPORTAÇÃO <==
+//  - XXX > importa o react.
+//  - XXX > importa o slyle dentro desta pasta Components.
+
+//  ==> ARRAY INTERFACE TITLEPROPS <==
+//  - XXX > cria uma array(interface TitleProps) onde vai ser atribuida as propriedades(text:string).
+//  - XXX > cira uma constante chamada Title .
+//  - XXX > instancia dentro da const Title  o <TitleProps>.
+//  - XXX > a const Title recebe depois da instancia <TitleProps> O react com (FC) Function componente.
+//  - XXX > e o React.FC vi recebe como propriedade o ({text}).
+
+//  ==> RETURN DO TITLEPROPS <==
+//  - XXX > retorna o H1 (Titulo) com a classe className="title"
+//  - XXX   > recebendo como propriedade {text} 
+
+//  ==> EXPORTAÇÃO DO TITLE <==
+//  - XXX > Depois exporta um componente React do Title que vai ser o <TitleProps>.
+//  =============================>>> <<<=================================
+
+
+//  ==> STYLE DO  | XXX | | XXX | XXX | 
+//  - XXX > Estilizar no (syle.css) o  ==> .xxx <==
+//  - XXX >   width / height / font-size 
+
+
+//  =============================>>> <<<=================================
