@@ -108,33 +108,33 @@ requisão para o Back End
 
 
 _________________________________________________________________________
-//  =============================>>> <<<=================================
-// Explicando o CÓDIGO ==> COMPONENTES <==
-// aqui basicamente: 
+  =============================>>> <<<=================================
+### Explicando o CÓDIGO ==> COMPONENTES <==
+ aqui basicamente: 
 
-//  ==> IMPORTAÇÃO <==
-//  - XXX > importa o react.
-//  - XXX > importa o slyle dentro desta pasta Components.
+###  ==> IMPORTAÇÃO <==
+  - XXX > importa o react.
+  - XXX > importa o slyle dentro desta pasta Components.
 
-//  ==> ARRAY INTERFACE TITLEPROPS <==
-//  - XXX > cria uma array(interface TitleProps) onde vai ser atribuida as propriedades(text:string).
-//  - XXX > cira uma constante chamada Title .
-//  - XXX > instancia dentro da const Title  o <TitleProps>.
-//  - XXX > a const Title recebe depois da instancia <TitleProps> O react com (FC) Function componente.
-//  - XXX > e o React.FC vi recebe como propriedade o ({text}).
+###  ==> ARRAY INTERFACE TITLEPROPS <==
+  - XXX > cria uma array(interface TitleProps) onde vai ser atribuida as propriedades(text:string).
+  - XXX > cira uma constante chamada Title .
+  - XXX > instancia dentro da const Title  o <TitleProps>.
+  - XXX > a const Title recebe depois da instancia <TitleProps> O react com (FC) Function componente.
+  - XXX > e o React.FC vi recebe como propriedade o ({text}).
 
-//  ==> RETURN DO TITLEPROPS <==
-//  - XXX > retorna o H1 (Titulo) com a classe className="title"
-//  - XXX   > recebendo como propriedade {text} 
+###  ==> RETURN DO TITLEPROPS <==
+  - XXX > retorna o H1 (Titulo) com a classe className="title"
+  - XXX   > recebendo como propriedade {text} 
 
-//  ==> EXPORTAÇÃO DO TITLE <==
-//  - XXX > Depois exporta um componente React do Title que vai ser o <TitleProps>.
-//  =============================>>> <<<=================================
-
-
-//  ==> STYLE DO  | XXX | | XXX | XXX | 
-//  - XXX > Estilizar no (syle.css) o  ==> .xxx <==
-//  - XXX >   width / height / font-size 
+###  ==> EXPORTAÇÃO DO TITLE <==
+  - XXX > Depois exporta um componente React do Title que vai ser o <TitleProps>.
+  =============================>>> <<<=================================
 
 
-//  =============================>>> <<<=================================
+###  ==> STYLE DO  | XXX | | XXX | XXX | 
+  - XXX > Estilizar no (syle.css) o  ==> .xxx <==
+  - XXX >   width / height / font-size 
+
+
+  =============================>>> <<<=================================
