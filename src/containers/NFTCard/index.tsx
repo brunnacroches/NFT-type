@@ -1,35 +1,99 @@
-// #  -CONTAINERS
-// o containers renderiza os componentes
-// é como se fosse as mãos pq ele junta todos os dedos(componentes)
+// #  -CONTAINERS // o containers renderiza os componentes // é como se fosse as mãos pq ele junta todos os dedos(componentes)
+// É onde coloca todas as DIVS
 
 
 import React from "react";
 import Title from "../../components/Title";
 import "./style.css";
+import iconView from "../../assets/icon/icon-view.svg";
+import iconEthereum from "../../assets/icon/icon-ethereum.svg";
+import iconClock from "../../assets/icon/icon-clock.svg";
 
 // DECLARAR AS STRINGS NO CONTAINERS
-interface NFTCardProps {
+export interface NFTCardProps {
   name: string;
   img: string;
+  description: string;
+  price: number;
+  days: number;
+  user: string;
+  link: string;
 }
 
 // A *CONSTANTE* NTFCard esta sendo *TIPADA* que é um Componente Funcional (FC)
 // O *COMPONENTE* <NFTCardsProps> vai receber como *PROPRIEDADE* o ({name, img})
-const NFTCard: React.FC<NFTCardProps> = ({ name, img }) => {
+const NFTCard: React.FC<NFTCardProps> = ({ 
+  name, 
+  img,
+  description,
+  price,
+  days,
+  user,
+  link
+}) => {
   return (
-    <div className="nftCard">
-      <div className="nftCard__imageContainer"> 
-        <img className ="nftCard__image" src={img} alt= "nft-card image" />
+    <div className="nftCripto">
+      <div className="nftCripto__imageCard"> 
+        <img 
+        className ="nftCripto__imageCard__img" 
+        src={img} 
+        alt="nftCripto Ethereum" 
+        />
+        <img
+        className ="nftCripto__imageCard__icon"
+        src={iconView}
+        alt="nftCripto View"
+        />
       </div>
-    <Title text= {name} />
-  </div>
+      <Title text= {name} />
+      <p className = "nftCripto__description">{description}</p>
+      <div className="nftCripto__infoCard">
+        <div className="nftCripto__infoCard__price">
+          <img src={iconEthereum} alt="iconEthereum" />
+          <p className="nftCripto__inforCard__price__value">
+            {price} ETH
+          </p>
+        </div>
+        <div className="nftCripto__infoCard__days">
+          <img src={iconClock} alt="iconClock" />
+          <p className="nftCripto__infoCard__days__number">
+            {days} days left
+          </p>
+        </div>
+      </div>
+      <div className="nftCripto__divider"></div>
+      <div className="nftCripto__user">
+        <div className="nftCripto__user__img">
+          <img className="nftCripto__user__userfig"
+            src={user} alt="user" />
+        </div>
+        <p className="nftCripto__user__creator">
+           Creating of {" "}
+           <span className="nftCripto__user__link">
+          {link}
+        </span>
+        </p>
+      </div>
+    </div>
   );
 };
 
-// EXPORTANDO o UM componente React do NFTCard que vai ser o <NFTCardsProps>
+// {/* // EXPORTANDO o UM componente React do NFTCard que vai ser o <NFTCardsProps> */}
 export default NFTCard;
 
 
+
+
+
+
+
+
+
+
+
+
+
+{/* 
 ///  =============================>>> <<<=================================
 // Explicando o CÓDIGO ==> CONTAINERS <==
 // aqui basicamente: 
@@ -38,7 +102,7 @@ export default NFTCard;
 //  - 2  > importa Title de Componentes (../../)
 //  - 3  > importa o slyle dentro desta pasta Containers. (./)
 
-// //  ==> CRIAR ARRAY INTERFACE NFTCardProps <==
+// //  ==> CRIAR ARRAY (((EXPORT))) INTERFACE NFTCardProps <==
 //  - 4 > cria uma array(interface TitleProps) onde vai ser atribuida as propriedades(name, img ...).
 
 // //  ==> CRIAR UMA CONST  NFTCardProps <==
@@ -63,4 +127,4 @@ export default NFTCard;
 //  - XXX >   width | height | font-size | border-radius
 
 
-//  =============================>>> <<<=================================
+//  =============================>>> <<<================================= */}

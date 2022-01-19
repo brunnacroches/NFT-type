@@ -1,4 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  /* FONTE DO TEXTO */
+  font-family: 'Outfit' , sans-serif;
+  /* AFINAR O CONTAINER PRINCIPAL */
+  box-sizing: border-box;
 }
+

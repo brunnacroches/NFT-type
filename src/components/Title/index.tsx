@@ -1,9 +1,8 @@
-// #  -COMPONENTES
-// uma parte do código que é utilizado e não tem lógica nenhuma
-// é como se fosse os dedos da mãos
+// #  -COMPONENTES // uma parte do código que é utilizado e não tem lógica nenhuma // é como se fosse os dedos da mãos
 
 import React from "react";
 import "./style.css";
+
 
 // Aqui será uma ARRAY aonde vai ser atribuidas as propriedades
 interface TitleProps {
@@ -19,6 +18,21 @@ const Title: React.FC<TitleProps> = ({ text }) => {
 
 // EXPORTANDO o UM componente React do Title que vai ser o <TitleProps>
 export default Title;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //  =============================>>> <<<=================================
 // Explicando o CÓDIGO ==> COMPONENTES <==
