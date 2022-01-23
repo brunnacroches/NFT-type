@@ -1,6 +1,8 @@
 // #  -CONTAINERS // o containers renderiza os componentes // é como se fosse as mãos pq ele junta todos os dedos(componentes)
 // É onde coloca todas as DIVS
 
+// é a matéria feita a partir do átomo
+
 
 import React from "react";
 import Title from "../../components/Title";

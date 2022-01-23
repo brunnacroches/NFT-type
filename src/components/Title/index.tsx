@@ -1,15 +1,26 @@
+// TUDO ISSO É UM COMPONENTE
+// A TIPAGEM É COMO SE FOSSE A CARTEIRA DE ID DO COMPONENTE (MINI DOCUMETACAO PARA O COMPONENTE) PARA
+// SER RENDERIZADO CORRETAMENTE 
+// ISSO É TEM TYPESCRIPT
+
 // #  -COMPONENTES // uma parte do código que é utilizado e não tem lógica nenhuma // é como se fosse os dedos da mãos
+
+// componentes = átomos
 
 import React from "react";
 import "./style.css";
 
 
-// Aqui será uma ARRAY aonde vai ser atribuidas as propriedades
+// Aqui será uma INTERFACE( tipagem de um objeto (tipagem = tambem é um objeto )) aonde vai ser atribuidas as propriedades
 interface TitleProps {
   text: string;
 }
+// Props : tudo que o componente/propriedade(titulo/texto) recebe por parámetro 
+// componente = função
 
-// Foi instanciado o <TitleProps> 
+
+// A const é do tipo funcao do react que tem as props (titleprops) que vai receber o parametro text
+// Foi tipado o <TitleProps> 
 // React.FC vai receber como propriedade o ({text})
 // FC é o function component 
 const Title: React.FC<TitleProps> = ({ text }) => {
@@ -26,6 +37,9 @@ export default Title;
 
 
 
+
+// COMPONENTE = É O TITULO
+// PROPRIEDADE = É O TEXTO
 
 
 
