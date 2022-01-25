@@ -22,7 +22,6 @@
   background-color: hsl(178, 100%, 50%);
 }
 
-
 .nftCripto__imageCard:hover > .nftCripto__imageCard__icon {
   position: absolute;
   top: 50%;
@@ -53,22 +52,21 @@
   color: hsl(215, 51%, 70%);
 }
 
-.nftCripto__infoCard{
+.nftCripto__infoCard {
   display: flex;
   justify-content: space-between;
 }
 
-
 .nftCripto__infoCard__price,
 .nftCripto__infoCard__days {
-/* DEIXAR VALOR E ICON DO LADO  */
+  /* DEIXAR VALOR E ICON DO LADO  */
   display: flex;
   /* ESPAÇAMENTO ENTRE O VALOR E ICON  */
   gap: 0.5rem;
 }
 
 .nftCripto__inforCard__price__value {
-  color:hsl(178, 100%, 50%);
+  color: hsl(178, 100%, 50%);
 }
 
 .nftCripto__infoCard__days__number {
@@ -77,17 +75,17 @@
 
 /* CRIANDO ALINHA DE DIVISÃO */
 .nftCripto__divider {
-width: 100%;
-height: 0.5px;
-background-color:hsl(215, 32%, 27%); 
-margin: 10px 0px;
+  width: 100%;
+  height: 0.5px;
+  background-color: hsl(215, 32%, 27%);
+  margin: 10px 0px;
 }
 
 .nftCripto__user {
   display: flex;
   align-items: center;
   gap: 1rem;
-  width: 100%;
+  width: 100px;
   height: 2.5rem;
   margin: 0 14px 0 0;
 }
@@ -95,6 +93,11 @@ margin: 10px 0px;
 .nftCripto__user__img,
 .nftCripto__user__userfig {
   height: 100%;
+  /* COLOCANDO O CIRCULO BRANCO NO AVATAR */
+  border-radius: 40px 40px 40px 40px;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .nftCripto__user__creator {
